@@ -1,5 +1,4 @@
 class Api::V1::RestaurantsController < ApplicationController
-
  def index
     if params[:title].present?
       @restaurants = Restaurant.where('title ILIKE ?', "%#{params[:title]}%")
@@ -20,9 +19,7 @@ class Api::V1::RestaurantsController < ApplicationController
   end
 
   private
-
   def restaurant_params
     params.require(:restaurant).permit(:title, :address, :picture, hours: {}, criteria: [])
   end
-
 end
