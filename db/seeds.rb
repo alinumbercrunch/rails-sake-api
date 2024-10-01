@@ -7,6 +7,7 @@ Restaurant.delete_all
 puts "Getting the restaurants from the JSON..."
 
 begin
+  # Changed API as a check
   url = 'https://gist.githubusercontent.com/alinumbercrunch/57d2c1821ebb8416629fe0db0fc4282d/raw/2c4a5cfc202537988ca996168d358ae90135f185/sake.json'
   json_data = URI.open(url).read
   restaurants = JSON.parse(json_data)
