@@ -1,0 +1,3 @@
+[submodule "rails-sake-api"]
+	path = rails-sake-api
+	url = https://github.com/alinumbercrunch/rails-sake-api
