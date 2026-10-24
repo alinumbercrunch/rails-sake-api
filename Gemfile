@@ -2,6 +2,11 @@ source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
+
+# nokogiri 1.19+ and net-imap 0.6+ require Ruby 3.2; this app runs Ruby 3.1 (.ruby-version).
+gem "nokogiri", "< 1.19"
+gem "net-imap", "~> 0.5.15"
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
